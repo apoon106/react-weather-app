@@ -14,7 +14,12 @@ export default function Weather() {
             />
           </div>
           <div className="col-3">
-            <input type="submit" value="Search" className="btn btn-primary" />
+            <input
+              type="submit"
+              value="Search"
+              className="btn btn-primary w-100"
+              autoFocus="on"
+            />
           </div>
         </div>
       </form>
@@ -23,13 +28,16 @@ export default function Weather() {
         <li>Friday 10:00PM</li>
         <li>Rain</li>
       </ul>
-      <div className="row">
+      <div className="row mt-3">
         <div className="col-6">
-          <img
-            src="https://ssl.gstatic.com/onebox/weather/64/rain.png"
-            alt="Rain"
-          />
-          48°F
+          <div className="d-flex">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/rain.png"
+              alt="Rain"
+            />
+            <span className="temperature">48</span>
+            <span className="unit">°F</span>
+          </div>
         </div>
         <div className="col-6">
           <ul>
